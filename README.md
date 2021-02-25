@@ -9,3 +9,6 @@ Ansible supplies many pre-built modules, but non work using them against Crestro
 
 ## Requirements
 Ansible is required, as it is the tool that will be used for automation
+
+## Findings
+using `transport=paramiko` in the ansible.cfg file, helps with running the raw module on crestron devices.
