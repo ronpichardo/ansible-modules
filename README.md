@@ -12,3 +12,4 @@ Ansible is required, as it is the tool that will be used for automation
 
 ## Findings
 using `transport=paramiko` in the ansible.cfg file, helps with running the raw module on crestron devices.
+the example-playbook.yml helps to atleast connect with the raw and send a debug message to the console with the result of the command passed in the playbook

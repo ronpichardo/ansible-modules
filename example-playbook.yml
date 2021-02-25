@@ -1,0 +1,11 @@
+---
+- name: Crestron Example
+  hosts: crestron
+  gather_facts: no
+  tasks:
+    - name: get version command
+      raw: ver
+      register: ps
+      failed_when: "ps.rc not in [ -1, 0, 1 ]"
+
+    - debug: msg="{{ ps.stdout }}"
